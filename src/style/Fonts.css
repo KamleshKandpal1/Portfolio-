@@ -1,0 +1,101 @@
+/* Import fonts from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Apply Bebas Neue font */
+.font-bebas-neue {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Apply Encode Sans Expanded font with various weights */
+.font-encode-sans-expanded-thin {
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.font-encode-sans-expanded-extralight {
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.font-encode-sans-expanded-light {
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.font-encode-sans-expanded-regular {
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-encode-sans-expanded-medium {
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.font-encode-sans-expanded-semibold {
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.font-encode-sans-expanded-bold {
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-encode-sans-expanded-extrabold {
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.font-encode-sans-expanded-black {
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Apply Encode Sans font */
+.font-encode-sans {
+  font-family: "Encode Sans", sans-serif;
+}
+
+/* Apply Dancing Script font */
+.font-dancing-script {
+  font-family: "Dancing Script", cursive;
+  font-weight: 400; /* or 700 */
+  font-style: normal;
+}
+
+/* Apply Dosis font with different weights */
+.font-dosis-thin {
+  font-family: "Dosis", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.font-dosis-regular {
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-dosis-bold {
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-dosis-extrabold {
+  font-family: "Dosis", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
