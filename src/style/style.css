@@ -127,6 +127,16 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .hero-page {
+    height: 80vh;
+  }
+  .hero-page .main {
+    height: 55vh;
+    padding: 0 7rem;
+  }
+  .main .button a {
+    font: 18px;
+  }
   .social-icon {
     bottom: 8px;
     gap: 1rem;
@@ -139,8 +149,12 @@ body {
 }
 
 @media (max-width: 576px) {
+  .hero-page {
+    height: 70vh;
+  }
   .hero-page .main {
     padding: 0 4rem;
+    height: 45vh;
   }
   .main img {
     height: 150px;
@@ -160,15 +174,19 @@ body {
   }
 }
 @media (max-width: 468px) {
+  .hero-page {
+    height: 60vh;
+  }
   .hero-page .main {
-    padding: 0 3rem;
+    padding: 0 4rem;
+    height: 45vh;
   }
   .main img {
-    height: 120px;
-    width: 120px;
+    height: 100px;
+    width: 100px;
   }
   .main .button a {
     font-size: 15px;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.8rem;
   }
 }
