@@ -64,11 +64,29 @@ body {
   padding: 0 10rem 3rem 10rem;
   text-align: center;
 }
+
 .main img {
   width: 200px;
   height: 200px;
   border: 1px solid #a69080;
   border-radius: 50%;
+  position: relative;
+  animation: pulse 3s linear infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(172, 137, 104, 0.7);
+  }
+  40% {
+    box-shadow: 0 0 0 50px rgba(172, 137, 104, 0);
+  }
+  80% {
+    box-shadow: 0 0 0 50px rgba(172, 137, 104, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(172, 137, 104, 0);
+  }
 }
 .main h4 {
   font-size: 30px;
@@ -100,7 +118,7 @@ body {
 
 .social-icon {
   position: absolute;
-  bottom: -4%;
+  bottom: -5%;
   left: 50%;
   transform: translate(-50%);
   display: flex;
