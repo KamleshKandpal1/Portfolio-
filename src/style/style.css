@@ -53,7 +53,7 @@ body {
 }
 .hero-page .main {
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   margin-top: 2rem;
   position: relative;
   display: flex;
@@ -73,7 +73,7 @@ body {
 .main h4 {
   font-size: 30px;
   color: #ffffff;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
 }
 .main p {
   font-size: 20px;
@@ -98,15 +98,16 @@ body {
   background-color: var(--highlight-color);
 }
 
-.social-icon {
+.main .social-icon {
   position: absolute;
-  bottom: -14%;
-  left: 50%;
-  transform: translate(-50%);
+  bottom: 8%;
+  right: 5%;
+  transform: translate(-5%);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
+  gap: 0.5rem;
   flex-wrap: wrap;
 }
 .social-icon a {
@@ -127,7 +128,7 @@ body {
 }
 @media (max-width: 768px) {
   .social-icon {
-    bottom: -10%;
+    bottom: 8px;
     gap: 1rem;
   }
   .social-icon a {
@@ -138,13 +139,36 @@ body {
 }
 
 @media (max-width: 576px) {
+  .hero-page .main {
+    padding: 0 4rem;
+  }
+  .main img {
+    height: 150px;
+    width: 150px;
+  }
+  .main .button a {
+    font-size: 18px;
+  }
   .social-icon {
-    bottom: -5%;
+    bottom: 8px;
     gap: 0.5rem;
   }
   .social-icon a {
     height: 30px;
     width: 30px;
     font-size: 16px;
+  }
+}
+@media (max-width: 468px) {
+  .hero-page .main {
+    padding: 0 3rem;
+  }
+  .main img {
+    height: 120px;
+    width: 120px;
+  }
+  .main .button a {
+    font-size: 15px;
+    padding: 0.5rem 1rem;
   }
 }
