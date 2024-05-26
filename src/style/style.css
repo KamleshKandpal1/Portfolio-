@@ -198,12 +198,12 @@ body {
     font-size: 20px;
   }
   .social-icon {
-    bottom: -20px;
+    bottom: -23px;
     gap: 0.5rem;
   }
   .social-icon a {
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
     font-size: 20px;
   }
 }
