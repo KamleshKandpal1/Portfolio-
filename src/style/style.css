@@ -4,6 +4,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none !important;
+  scroll-behavior: smooth;
 }
 :root {
   --primary-color: #3e362e; /* text-colors*/
@@ -137,6 +138,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+#about {
+  margin: 4rem 0rem;
+}
+/* #about .col {
+} */
 @media (max-width: 991px) {
   .container-fluid {
     justify-content: end !important;
