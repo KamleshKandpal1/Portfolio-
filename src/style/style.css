@@ -53,8 +53,8 @@ body {
 }
 .hero-page .main {
   width: 100%;
-  height: 80vh;
-  margin-top: 2rem;
+  height: auto;
+  margin-top: 4rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -126,24 +126,27 @@ body {
 }
 @media (max-width: 768px) {
   .hero-page {
-    height: 85vh;
+    height: 80vh;
   }
   .hero-page .main {
-    margin-bottom: 0 !important;
-    height: 60vh;
+    margin-top: 0 !important;
     padding: 0 7rem;
+  }
+  .main img {
+    height: 170px;
+    width: 170px;
   }
   .main .button a {
     font: 18px;
   }
   .social-icon {
-    bottom: -20px;
+    bottom: -25px;
     gap: 1rem;
   }
   .social-icon a {
-    height: 40px;
-    width: 40px;
-    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    font-size: 24px;
   }
 }
 
@@ -153,8 +156,7 @@ body {
   }
   .hero-page .main {
     padding: 0 4rem;
-    height: 60vh;
-    margin-top: 0;
+    margin-top: 0 !important;
   }
   .main .button a {
     font-size: 18px;
@@ -171,12 +173,11 @@ body {
 }
 @media (max-width: 468px) {
   .hero-page {
-    height: 70vh;
+    height: 65vh;
   }
   .hero-page .main {
-    margin-top: 0;
-    padding: 0 4rem;
-    height: 55vh;
+    margin-top: 0 !important;
+    padding: 0 2rem;
     gap: 0rem;
   }
   .main img {
@@ -187,14 +188,13 @@ body {
     font-size: 25px;
   }
   .main p {
-    font-size: 15px;
+    font-size: 16px;
   }
   .main .button {
-    flex-direction: column;
     gap: 0.5rem;
   }
   .main .button a {
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1.5rem;
   }
   .social-icon {
     bottom: -20px;
