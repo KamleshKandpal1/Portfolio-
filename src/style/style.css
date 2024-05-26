@@ -98,10 +98,10 @@ body {
   background-color: var(--highlight-color);
 }
 
-.main .social-icon {
+.social-icon {
   position: absolute;
-  bottom: 8%;
-  right: 5%;
+  bottom: 5%;
+  right: 3%;
   transform: translate(-5%);
   display: flex;
   flex-direction: column;
@@ -150,7 +150,7 @@ body {
 
 @media (max-width: 576px) {
   .hero-page {
-    height: 70vh;
+    height: 75vh;
   }
   .hero-page .main {
     padding: 0 4rem;
@@ -170,12 +170,13 @@ body {
   }
 }
 @media (max-width: 468px) {
-  .hero-page {
-    height: 60vh;
-  }
   .hero-page .main {
     padding: 0 4rem;
-    height: 45vh;
+    height: 50vh;
+  }
+  .main img {
+    width: 150px;
+    height: 150px;
   }
   .main .button a {
     font-size: 15px;
