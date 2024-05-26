@@ -141,8 +141,18 @@ body {
 #about {
   margin: 4rem 0rem;
 }
-/* #about .col {
-} */
+#about {
+  color: var(--primary-color);
+}
+#about .col .h4 {
+  font-weight: 600 !important;
+}
+#about .row .col-4 {
+  font-size: 21px;
+}
+#about .row .col-8 {
+  font-size: 21px;
+}
 @media (max-width: 991px) {
   .container-fluid {
     justify-content: end !important;
