@@ -126,7 +126,7 @@ body {
 }
 @media (max-width: 768px) {
   .hero-page {
-    height: 65vh;
+    height: 75vh;
   }
   .hero-page .main {
     margin-top: 0 !important;
@@ -135,9 +135,6 @@ body {
   .main img {
     height: 170px;
     width: 170px;
-  }
-  .main .button a {
-    font-size: 25px;
   }
   .social-icon {
     bottom: -25px;
@@ -152,14 +149,17 @@ body {
 
 @media (max-width: 576px) {
   .hero-page {
-    height: 60vh;
+    height: 75vh;
   }
   .hero-page .main {
-    padding: 0 3rem;
+    padding: 0 2rem;
     margin-top: 0 !important;
   }
+  .main p {
+    font-size: 18px;
+  }
   .main .button a {
-    font-size: 20px;
+    font-size: 16px;
   }
   .social-icon {
     bottom: -25px;
@@ -173,7 +173,7 @@ body {
 }
 @media (max-width: 468px) {
   .hero-page {
-    height: 50vh;
+    height: 60vh;
   }
   .hero-page .main {
     margin-top: 0 !important;
@@ -181,15 +181,15 @@ body {
     gap: 0.3rem;
   }
   .main img {
-    width: 130px;
-    height: 130px;
+    width: 180px;
+    height: 180px;
   }
-  .main h4 {
+  /* .main h4 {
     font-size: 25px;
   }
   .main p {
     font-size: 16px;
-  }
+  } */
   .main .button {
     gap: 1rem;
   }
