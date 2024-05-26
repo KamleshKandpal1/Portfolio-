@@ -100,15 +100,13 @@ body {
 
 .social-icon {
   position: absolute;
-  bottom: 5%;
-  right: 3%;
-  transform: translate(-5%);
+  bottom: -4%;
+  left: 50%;
+  transform: translate(-50%);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  flex-wrap: wrap;
 }
 .social-icon a {
   color: #ffffff;
@@ -128,7 +126,7 @@ body {
 }
 @media (max-width: 768px) {
   .hero-page {
-    height: 80vh;
+    height: 85vh;
   }
   .hero-page .main {
     margin-bottom: 0 !important;
@@ -139,7 +137,7 @@ body {
     font: 18px;
   }
   .social-icon {
-    bottom: 8px;
+    bottom: -20px;
     gap: 1rem;
   }
   .social-icon a {
@@ -162,13 +160,13 @@ body {
     font-size: 18px;
   }
   .social-icon {
-    bottom: 8px;
+    bottom: -25px;
     gap: 0.5rem;
   }
   .social-icon a {
-    height: 30px;
-    width: 30px;
-    font-size: 16px;
+    height: 50px;
+    width: 50px;
+    font-size: 24px;
   }
 }
 @media (max-width: 468px) {
@@ -179,13 +177,32 @@ body {
     margin-top: 0;
     padding: 0 4rem;
     height: 55vh;
+    gap: 0rem;
   }
   .main img {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
+  }
+  .main h4 {
+    font-size: 25px;
+  }
+  .main p {
+    font-size: 15px;
+  }
+  .main .button {
+    flex-direction: column;
+    gap: 0.5rem;
   }
   .main .button a {
-    font-size: 15px;
-    padding: 0.5rem 0.8rem;
+    padding: 0.5rem 2rem;
+  }
+  .social-icon {
+    bottom: -20px;
+    gap: 0.5rem;
+  }
+  .social-icon a {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
   }
 }
