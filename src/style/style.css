@@ -126,7 +126,7 @@ body {
 }
 @media (max-width: 768px) {
   .hero-page {
-    height: 75vh;
+    height: 65vh;
   }
   .hero-page .main {
     margin-top: 0 !important;
@@ -149,7 +149,7 @@ body {
 
 @media (max-width: 576px) {
   .hero-page {
-    height: 75vh;
+    height: 65vh;
   }
   .hero-page .main {
     padding: 0 2rem;
