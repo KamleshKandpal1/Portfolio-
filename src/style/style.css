@@ -173,7 +173,7 @@ body {
 }
 @media (max-width: 468px) {
   .hero-page {
-    height: 60vh;
+    height: 55vh;
   }
   .hero-page .main {
     margin-top: 0 !important;
