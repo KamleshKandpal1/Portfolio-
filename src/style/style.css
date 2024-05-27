@@ -321,4 +321,7 @@ body {
   #skills .gx-5 .col .p-3 {
     padding: 0.2rem !important;
   }
+  #portfolio .mb-5 {
+    margin-bottom: 1rem !important;
+  }
 }
