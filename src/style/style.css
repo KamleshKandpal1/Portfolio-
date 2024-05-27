@@ -173,8 +173,9 @@ body {
   .container-fluid {
     justify-content: end !important;
   }
-  #about .px-4 {
-    padding: 0 6rem !important;
+  #about .px-4,
+  #skills .px-4 {
+    padding: 0 5rem !important;
   }
 }
 @media (max-width: 768px) {
@@ -198,11 +199,16 @@ body {
     width: 50px;
     font-size: 24px;
   }
-  #about .gx-5 {
+  #about .gx-5,
+  #skills .gx-5 {
     flex-direction: column;
   }
-  #about .px-4 {
-    padding: 0 5rem !important;
+  #skills .gx-5 .col .p-3 {
+    padding: 0.5rem !important;
+  }
+  #about .px-4,
+  #skills .px-4 {
+    padding: 0 4rem !important;
   }
 }
 
@@ -229,8 +235,9 @@ body {
     width: 50px;
     font-size: 24px;
   }
-  #about .px-4 {
-    padding: 0 4rem !important;
+  #about .px-4,
+  #skills .px-4 {
+    padding: 0 3.5rem !important;
   }
 }
 @media (max-width: 468px) {
@@ -268,7 +275,8 @@ body {
     width: 45px;
     font-size: 20px;
   }
-  #about .px-4 {
+  #about .px-4,
+  #skills px-4 {
     padding: 0 2rem !important;
   }
 }
