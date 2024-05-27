@@ -276,7 +276,10 @@ body {
     font-size: 20px;
   }
   #about .px-4,
-  #skills px-4 {
+  #skills .px-4 {
     padding: 0 2rem !important;
+  }
+  #skills .gx-5 .col .p-3 {
+    padding: 0.2rem !important;
   }
 }
