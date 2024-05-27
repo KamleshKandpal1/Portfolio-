@@ -139,13 +139,15 @@ body {
   align-items: center;
 }
 #about,
-#skills {
+#skills,
+#portfolio {
   margin: 4rem 0rem;
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
 }
 
 #about .col .h4,
-#skills .h4 {
+#skills .h4,
+#portfolio .fs-3 {
   font-weight: 600 !important;
 }
 #about .row .col-4 {
@@ -155,8 +157,14 @@ body {
   font-size: 21px;
 }
 #about .px-4,
-#skills .px-4 {
+#skills .px-4,
+#portfolio .px-4 {
   padding: 0 7rem !important;
+}
+#skills .learning,
+#skills .fs-3,
+#portfolio .fs-3 {
+  color: var(--primary-color);
 }
 #skills .progress {
   background-color: var(--secondary-color) !important;
@@ -169,12 +177,40 @@ body {
   height: 5px !important;
   border-radius: 0 !important;
 }
+#portfolio .card {
+  width: 100%;
+  background-color: var(--secondary-color) !important;
+  box-shadow: 2px 2px 1px 0px var(--primary-color);
+  color: white;
+}
+.card figure {
+  margin: 0 !important;
+  height: 50% !important;
+}
+.card figure img {
+  width: 100% !important;
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+}
+.card p {
+  margin-bottom: 10px !important;
+}
+.card .live-link {
+  color: #ffffff;
+  font-size: 16px;
+}
+.card .live-link:hover {
+  /* text-decoration: underline !important; */
+  color: var(--primary-color);
+}
+
 @media (max-width: 991px) {
   .container-fluid {
     justify-content: end !important;
   }
   #about .px-4,
-  #skills .px-4 {
+  #skills .px-4,
+  #portfolio .px-4 {
     padding: 0 5rem !important;
   }
 }
@@ -207,7 +243,8 @@ body {
     padding: 0.5rem !important;
   }
   #about .px-4,
-  #skills .px-4 {
+  #skills .px-4,
+  #portfolio .px-4 {
     padding: 0 4rem !important;
   }
 }
@@ -236,7 +273,8 @@ body {
     font-size: 24px;
   }
   #about .px-4,
-  #skills .px-4 {
+  #skills .px-4,
+  #portfolio .px-4 {
     padding: 0 3.5rem !important;
   }
 }
@@ -276,7 +314,8 @@ body {
     font-size: 20px;
   }
   #about .px-4,
-  #skills .px-4 {
+  #skills .px-4,
+  #portfolio .px-4 {
     padding: 0 2rem !important;
   }
   #skills .gx-5 .col .p-3 {
