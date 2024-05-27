@@ -138,13 +138,14 @@ body {
   justify-content: center;
   align-items: center;
 }
-#about {
+#about,
+#skills {
   margin: 4rem 0rem;
-}
-#about {
   color: var(--primary-color);
 }
-#about .col .h4 {
+
+#about .col .h4,
+#skills .h4 {
   font-weight: 600 !important;
 }
 #about .row .col-4 {
@@ -153,8 +154,20 @@ body {
 #about .row .col-8 {
   font-size: 21px;
 }
-#about .px-4 {
+#about .px-4,
+#skills .px-4 {
   padding: 0 7rem !important;
+}
+#skills .progress {
+  background-color: var(--secondary-color) !important;
+  height: 5px !important;
+  border-radius: 0 !important;
+  margin: 1.5rem 0;
+}
+#skills .progress-bar {
+  background-color: var(--primary-color) !important;
+  height: 5px !important;
+  border-radius: 0 !important;
 }
 @media (max-width: 991px) {
   .container-fluid {
