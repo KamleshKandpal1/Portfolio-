@@ -181,11 +181,10 @@ body {
   width: 100%;
   background-color: var(--secondary-color) !important;
   box-shadow: 2px 2px 1px 0px var(--primary-color);
-  color: white;
+  color: #ffffff;
 }
 .card figure {
   margin: 0 !important;
-  height: 50% !important;
 }
 .card figure img {
   width: 100% !important;
@@ -195,6 +194,7 @@ body {
 .card p {
   margin-bottom: 10px !important;
 }
+
 .card .live-link {
   color: #ffffff;
   font-size: 16px;
