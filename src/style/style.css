@@ -140,32 +140,39 @@ body {
 }
 #about,
 #skills,
-#portfolio {
-  padding: 3.5rem 0rem;
+#portfolio,
+#experience,
+#education {
+  margin: 3.5rem 0rem;
   color: var(--primary-color) !important;
 }
-
 #about .col .h4,
 #skills .h4,
-#portfolio .fs-3 {
+#portfolio .fs-3,
+#experience .fs-3 #education .fs-3 {
   font-weight: 600 !important;
 }
+#about .px-4,
+#skills .px-4,
+#portfolio .px-4,
+#experience .px-4,
+#education .px-4 {
+  padding: 0 10rem !important;
+}
+/* #skills .learning,
+#skills .fs-3,
+#portfolio .fs-3,
+#experience .fs-3 {
+  color: var(--primary-color);
+} */
+/* About */
 #about .row .col-4 {
   font-size: 21px;
 }
 #about .row .col-8 {
   font-size: 21px;
 }
-#about .px-4,
-#skills .px-4,
-#portfolio .px-4 {
-  padding: 0 7rem !important;
-}
-#skills .learning,
-#skills .fs-3,
-#portfolio .fs-3 {
-  color: var(--primary-color);
-}
+/* Skills */
 #skills .progress {
   background-color: var(--secondary-color) !important;
   height: 5px !important;
@@ -177,6 +184,7 @@ body {
   height: 5px !important;
   border-radius: 0 !important;
 }
+/* Portfolio */
 #portfolio .card {
   width: 100%;
   background-color: var(--secondary-color) !important;
@@ -194,7 +202,6 @@ body {
 .card p {
   margin-bottom: 10px !important;
 }
-
 .card .live-link {
   color: #ffffff;
   font-size: 16px;
@@ -203,14 +210,52 @@ body {
   /* text-decoration: underline !important; */
   color: var(--primary-color);
 }
+/* Experience */
+#experience .col-md-3,
+#experience .col-md-9 {
+  color: #ffffff;
+  box-shadow: 2px 2px 1px 0px var(--primary-color);
+}
+#experience .col-md-3 {
+  background-color: var(--primary-color);
+}
+#experience .col-md-3 .p-3 {
+  margin: 1rem 0;
+  text-align: center;
+}
 
+#experience .col-md-9 {
+  background-color: var(--secondary-color);
+}
+/* Education */
+#education .col-md-3,
+#education .col-md-9 {
+  color: #ffffff;
+  box-shadow: 2px 2px 1px 0px var(--primary-color);
+}
+#education .col-md-3 {
+  background-color: var(--primary-color);
+}
+#education .col-md-3 .p-3 {
+  margin: 1rem 0;
+  text-align: center;
+}
+#education .col-md-9 {
+  background-color: var(--secondary-color);
+}
+#education .col-md-3 h4,
+#education .col-md-9 h4 {
+  letter-spacing: 1px;
+}
 @media (max-width: 991px) {
   .container-fluid {
     justify-content: end !important;
   }
   #about .px-4,
   #skills .px-4,
-  #portfolio .px-4 {
+  #portfolio .px-4,
+  #education .px-4,
+  #experience .px-4 {
     padding: 0 5rem !important;
   }
 }
@@ -244,8 +289,20 @@ body {
   }
   #about .px-4,
   #skills .px-4,
-  #portfolio .px-4 {
+  #portfolio .px-4,
+  #education .px-4,
+  #experience .px-4 {
     padding: 0 4rem !important;
+  }
+  #education .row .col-md-3,
+  #experience .row .col-md-3 {
+    border-top-right-radius: var(--bs-border-radius) !important;
+    border-bottom-left-radius: 0 !important;
+  }
+  #education .row .col-md-9,
+  #experience .row .col-md-9 {
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: var(--bs-border-radius) !important;
   }
 }
 
@@ -274,7 +331,9 @@ body {
   }
   #about .px-4,
   #skills .px-4,
-  #portfolio .px-4 {
+  #portfolio .px-4,
+  #education .px-4,
+  #experience .px-4 {
     padding: 0 3.5rem !important;
   }
 }
@@ -315,7 +374,9 @@ body {
   }
   #about .px-4,
   #skills .px-4,
-  #portfolio .px-4 {
+  #portfolio .px-4,
+  #education .px-4,
+  #experience .px-4 {
     padding: 0 2rem !important;
   }
   #skills .gx-5 .col .p-3 {
