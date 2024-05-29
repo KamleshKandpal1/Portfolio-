@@ -14,3 +14,24 @@ const tooltipTriggerList = document.querySelectorAll(
 const tooltipList = [...tooltipTriggerList].map(
   (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
 );
+
+// moveToTop function
+const moveToTopButton = document.getElementById("moveToTopButton");
+
+const handleScroll = () => {
+  if (window.scrollY > window.innerHeight * 0.8) {
+    moveToTopButton.classList.remove("hidden");
+  } else {
+    moveToTopButton.classList.add("hidden");
+  }
+};
+
+const handleMoveToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+
+window.addEventListener("scroll", handleScroll);
+moveToTopButton.addEventListener("click", handleMoveToTop);
