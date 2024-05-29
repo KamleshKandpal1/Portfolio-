@@ -253,7 +253,7 @@ body {
 }
 /* Contact */
 #contact .row {
-  /* margin-top: 10rem; */
+  margin-top: 6rem;
   background-color: var(--secondary-color);
   /* color: #ffffff; */
   box-shadow: var(--primary-color) 0px 3px 8px;
