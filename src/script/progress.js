@@ -48,7 +48,8 @@ AOS.init();
       if (response.ok) {
         console.log("sucess");
         Toastify({
-          text: "Message Send",
+          text: "Your message has been sent successfully! We'll get back to you soon.",
+
           duration: 3000, // duration in milliseconds
           close: false, // display close button
           gravity: "top", // `top` or `bottom`
@@ -76,7 +77,7 @@ AOS.init();
           console.log("fail");
         }
         Toastify({
-          text: "Message Failed",
+          text: "Oops! Something went wrong. Please try again later.",
           duration: 3000, // duration in milliseconds
           close: false, // display close button
           gravity: "top", // `top` or `bottom`
@@ -97,7 +98,7 @@ AOS.init();
     } catch (error) {
       console.log("fail");
       Toastify({
-        text: "Message Failed",
+        text: "Oops! Something went wrong. Please try again later.",
         duration: 3000, // duration in milliseconds
         close: false, // display close button
         gravity: "top", // `top` or `bottom`
@@ -116,4 +117,17 @@ AOS.init();
       }).showToast();
     }
   });
+})();
+// Sticky Header
+(function () {
+  const header = document.querySelector(".navbar");
+
+  function handleScrolls() {
+    if (window.pageYOffset > window.innerHeight * 0.8) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+  window.addEventListener("scroll", handleScrolls);
 })();
