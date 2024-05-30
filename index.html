@@ -10,7 +10,6 @@
     />
     <link rel="stylesheet" href="/src/style/Fonts.css" />
     <link rel="stylesheet" href="/src/style/style.css" />
-    <link rel="stylesheet" href="/src//style/new.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -20,6 +19,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
     <title>KAMLESH KANDPAL</title>
   </head>
   <body>
@@ -535,7 +539,11 @@
           </div>
           <div class="col-12 col-md-6">
             <div class="p-3">
-              <form id="contact-form">
+              <form
+                id="contact-form"
+                action="https://formspree.io/f/xdoqrokb"
+                method="post"
+              >
                 <h5 class="font-dosis-bold fs-5 mb-4">
                   Fell free to contact me
                 </h5>
@@ -543,7 +551,7 @@
                   <label for=""><i class="fa-solid fa-user"></i></label>
                   <input
                     type="text"
-                    name="name"
+                    name="Name"
                     id="name"
                     placeholder="Name"
                     autocomplete="off"
@@ -555,7 +563,7 @@
                   </label>
                   <input
                     type="text"
-                    name="subject"
+                    name="Subject"
                     id="subject"
                     placeholder="Subject"
                     autocomplete="off"
@@ -567,7 +575,7 @@
                   </label>
                   <input
                     type="email"
-                    name="email"
+                    name="Email"
                     id="email"
                     placeholder="Email"
                     autocomplete="off"
@@ -575,7 +583,7 @@
                 </div>
                 <div class="mb-4">
                   <textarea
-                    name="textArea"
+                    name="Message"
                     id="textArea"
                     placeholder="Your Message"
                   ></textarea>
@@ -641,6 +649,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
     <script src="/src/script/progress.js"></script>
   </body>
 </html>
