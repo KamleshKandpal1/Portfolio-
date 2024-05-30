@@ -536,7 +536,7 @@ body {
   }
   .hero-page .main {
     margin-top: 0 !important;
-    padding: 0rem;
+    padding: 1%;
     gap: 0.3rem;
   }
   .main img {
