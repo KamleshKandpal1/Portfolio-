@@ -545,8 +545,12 @@ body {
   #contact .px-4 {
     padding: 0 2rem !important;
   }
+  #about .row .col-4,
+  #about .row .col-8 {
+    font-size: 18px;
+  }
   #skills .gx-5 .col .p-3 {
-    padding: 0.2rem !important;
+    padding: 0.5rem 0 0 0 !important;
   }
   #portfolio .mb-5 {
     margin-bottom: 1rem !important;
