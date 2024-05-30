@@ -531,6 +531,9 @@ body {
   }
 }
 @media (max-width: 468px) {
+  .navbar {
+    padding: 0 !important;
+  }
   .hero-page {
     height: 55vh;
   }
