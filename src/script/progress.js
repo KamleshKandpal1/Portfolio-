@@ -35,3 +35,6 @@ const handleMoveToTop = () => {
 
 window.addEventListener("scroll", handleScroll);
 moveToTopButton.addEventListener("click", handleMoveToTop);
+
+// AOS
+AOS.init();

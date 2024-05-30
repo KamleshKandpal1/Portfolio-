@@ -19,16 +19,21 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>KAMLESH KANDPAL</title>
   </head>
   <body>
     <button id="moveToTopButton" class="move-to-top hidden">
-      Move to Top <i class="fas fa-arrow-circle-up"></i>
+      <span class="button-text">Move to Top</span>
+      <i class="fas fa-arrow-circle-up"></i>
     </button>
 
     <div class="hero-page">
       <div class="opacity"></div>
-      <nav class="navbar navbar-expand-lg">
+      <nav
+        class="navbar navbar-expand-lg navbar-transparent"
+        color-on-scroll="400"
+      >
         <div class="container-fluid">
           <button
             class="navbar-toggler"
@@ -289,7 +294,7 @@
       </div>
       <div class="px-4 text-center">
         <div class="row gx-5">
-          <div class="col-12 col-md-6 mb-4 mt-4">
+          <div class="col-12 col-md-6 mb-4 mt-4" data-aos="flip-left">
             <div class="card">
               <figure>
                 <img
@@ -312,7 +317,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 mb-4 mt-4">
+          <div class="col-12 col-md-6 mb-4 mt-4" data-aos="flip-right">
             <div class="card">
               <figure>
                 <img
@@ -336,7 +341,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 mb-4 mt-4">
+          <div class="col-12 col-md-6 mb-4 mt-4" data-aos="flip-left">
             <div class="card">
               <figure>
                 <img
@@ -358,7 +363,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 mb-4 mt-4">
+          <div class="col-12 col-md-6 mb-4 mt-4" data-aos="flip-right">
             <div class="card">
               <figure>
                 <img
@@ -389,7 +394,7 @@
       </div>
       <div class="px-4">
         <div class="row gx-5 my-0 mx-auto">
-          <div class="col-12 col-md-3 rounded-start">
+          <div class="col-12 col-md-3 rounded-start" data-aos="fade-right">
             <div class="p-3">
               <p class="text-uppercase font-encode-sans-light">
                 Feb 2023 - Sept 2023
@@ -399,7 +404,7 @@
               </h5>
             </div>
           </div>
-          <div class="col-12 col-md-9 rounded-end">
+          <div class="col-12 col-md-9 rounded-end" data-aos="fade-left">
             <div class="p-3">
               <div class="font-dosis-bold fs-4 mb-2">
                 Frontend Developer Intern
@@ -595,6 +600,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/src/script/progress.js"></script>
   </body>
 </html>

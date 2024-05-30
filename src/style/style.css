@@ -20,6 +20,7 @@
 }
 body {
   background-color: var(--highlight-color) !important;
+  position: relative;
 }
 .move-to-top {
   position: fixed;
@@ -48,8 +49,10 @@ body {
 }
 
 /* .navbar {
-  background-color: var(--highlight-color) !important;
+  background-color: transparent !important;
+  z-index: 999 !important;
 } */
+
 .navbar-collapse {
   justify-content: end;
   padding: 0 5rem;
@@ -389,8 +392,18 @@ body {
   #contact .row {
     width: 80% !important;
   }
+  #contact .px-4 {
+    padding-top: 0.5rem !important;
+  }
 }
 @media (max-width: 768px) {
+  .button-text {
+    display: none;
+  }
+  .move-to-top {
+    padding: 10px;
+    font-size: 18px;
+  }
   .hero-page {
     height: 65vh;
   }
@@ -439,6 +452,12 @@ body {
   #contact .row {
     width: 100% !important;
   }
+  #contact .px-4 {
+    padding-top: 0.5rem !important;
+  }
+  .footer {
+    padding: 1.5rem 0 1rem 0;
+  }
 }
 
 @media (max-width: 576px) {
@@ -471,6 +490,9 @@ body {
   #experience .px-4,
   #contact .px-4 {
     padding: 0 3.5rem !important;
+  }
+  #contact .px-4 {
+    padding-top: 0.5rem !important;
   }
 }
 @media (max-width: 468px) {
@@ -521,5 +543,11 @@ body {
   }
   #portfolio .mb-5 {
     margin-bottom: 1rem !important;
+  }
+  #contact .px-4 {
+    padding-top: 0.5rem !important;
+  }
+  #contact .row {
+    margin-top: 1rem !important;
   }
 }
