@@ -90,6 +90,17 @@ body {
   position: relative;
   color: #ffffff !important;
 }
+.navbar .navbar-toggler {
+  border: none;
+  color: var(--primary-color) !important;
+}
+.navbar .navbar-toggler:active,
+.navbar .navbar-toggler:focus {
+  box-shadow: none !important;
+}
+.navbar .navbar-toggler .navbar-toggler-icon {
+  font-size: 30px;
+}
 .hero-page .main {
   width: 100%;
   height: auto;
@@ -175,6 +186,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.custom-tooltip {
+  --bs-tooltip-bg: var(--primary-color) !important;
+  --bs-tooltip-color: #f1f1f1 !important;
 }
 #about,
 #skills,
@@ -386,6 +401,18 @@ body {
   color: #515bd4;
 }
 @media (max-width: 991px) {
+  .navbar {
+    background-color: var(--primary-color) !important;
+    z-index: 1050 !important;
+  }
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    background-color: var(--primary-color) !important;
+    padding: 0 1rem;
+  }
   .container-fluid {
     justify-content: end !important;
   }

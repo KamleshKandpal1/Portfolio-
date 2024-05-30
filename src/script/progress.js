@@ -121,6 +121,7 @@ AOS.init();
 // Sticky Header
 (function () {
   const header = document.querySelector(".navbar");
+  const navbarCollapse = document.querySelector(".navbar-collapse");
 
   function handleScrolls() {
     if (window.pageYOffset > window.innerHeight * 0.8) {
@@ -130,4 +131,24 @@ AOS.init();
     }
   }
   window.addEventListener("scroll", handleScrolls);
+})();
+// Navbar closer
+(function () {
+  const navbarToggler = document.querySelector(".navbar-toggler");
+  const navbarCollapse = document.querySelector(".navbar-collapse");
+  const navItems = document.querySelectorAll(".navbar-nav .nav-link");
+
+  // Toggle navbar on click of navbar-toggler
+  navbarToggler.addEventListener("click", function () {
+    if (navbarCollapse.classList.contains("show")) {
+      navbarCollapse.classList.remove("show");
+    }
+  });
+
+  // Close navbar when any nav-link is clicked
+  navItems.forEach((item) => {
+    item.addEventListener("click", function () {
+      navbarCollapse.classList.remove("show");
+    });
+  });
 })();
