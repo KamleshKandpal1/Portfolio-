@@ -5,6 +5,7 @@
   list-style: none;
   text-decoration: none !important;
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 :root {
   --primary-color: #3e362e; /* text-colors*/
