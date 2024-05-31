@@ -413,7 +413,11 @@ body {
     background-color: var(--primary-color) !important;
     padding: 0 1rem;
   }
+  .navbar .navbar-toggler .navbar-toggler-icon {
+    font-size: 22px !important;
+  }
   .container-fluid {
+    height: 40px !important;
     justify-content: end !important;
   }
   #about .px-4,
