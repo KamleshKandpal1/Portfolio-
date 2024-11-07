@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Tiny5&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  .itim-regular {
+    font-family: "Itim", cursive;
+  }
+}
+
+:root {
+  /* Dark Mode Base Colors */
+  --background-color: #222d35;
+  --text-color: #f1faee;
+  --highlight-color: #264653;
+
+  /* Accent Colors */
+  --accent-primary: #2a9d8f; /* Use for buttons, highlights */
+  --accent-secondary: #e9c46a; /* Use for links, secondary buttons */
+  --accent-third: #f4a261; /* Use for links, secondary buttons */
+  --accent-fouth: #e76f51; /* Use for links, secondary buttons */
+  --accent-fifth: #87bef0; /* Use for links, secondary buttons */
+
+  /* Additional Colors */
+  --border-color: #333333; /* Subtle border for elements */
+  --shadow-color: rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+/* General Styles */
+body {
+  background-color: var(--background-color);
+  /* color: var(--text-color); */
+}
+
+/* a {
+  color: var(--accent-secondary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-primary);
+} */
+
+/* Buttons */
+button {
+  background-color: var(--accent-primary);
+  color: var(--background-color);
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  transition: all 0.5s ease;
+}
+
+/* button:hover {
+  background-color: var(--);
+  color: var(--accent-primary);
+} */
+
+/* Card / Container */
+.card {
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px var(--shadow-color);
+}
+/* Custom Scrollbar for WebKit Browsers (Chrome, Safari, Edge) */
+.skill::-webkit-scrollbar {
+  width: 1%;
+}
+/* Scrollbar for Firefox */
+/* .skill {
+  scrollbar-width: thin;
+  scrollbar-color: var(--highlight-color) var(--accent-secondary);
+} */

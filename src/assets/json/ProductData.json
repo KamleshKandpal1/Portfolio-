@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Hotbot Studio",
+    "tech": "React, Tailwind CSS, Magic UI",
+    "link": "https://www.hotbotstudios.com/",
+    "img": "/img/project_img/www.hotbotstudios.com_.png",
+    "type": "Project"
+  },
+  {
+    "title": "Sons Commerces",
+    "tech": "React, Tailwind CSS, Axios, Dummy-JSON API, Context API",
+    "link": "https://main--sons-commerces.netlify.app/",
+    "img": "/img/project_img/main--sons-commerces.netlify.app_.png",
+    "type": "Demo"
+  },
+  {
+    "title": "Language Translator",
+    "tech": "React, Tailwind, Axios, Context API, Rapid API",
+    "link": "https://language-translator-beige.vercel.app/",
+    "img": "/img/project_img/language-translator-beige.vercel.app_.png",
+    "type": "Demo"
+  },
+  {
+    "title": "Task Management Application",
+    "tech": "MERN Stack, Redux, Tailwind CSS",
+    "link": "https://task-mang-frontend.vercel.app/",
+    "img": "/img/project_img/task-mang-frontend.vercel.app_signup.png",
+    "type": "Demo"
+  }
+]
