@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Education",
+    "duration": "Aug 2019 - Aug 2023",
+    "position": "Bachelor's Degree",
+    "grade": "Bachelor of Technology (C.S.E.)",
+    "institution": "MAHARISHI DAYANAND UNIVERSITY",
+    "accomplishment": [
+      "I was a Software Engineering student at MDU, proudly served as the Vice Captain of the college volleyball team.",
+      "Alongside my leadership in sports, I maintained academic excellence, achieving a CGPA of 7.7 out of 10.0 in my 8th semester."
+    ],
+    "grades": ["CGPA : 6.5/10.0"]
+  },
+  {
+    "title": "",
+    "duration": "April 2015 - April 2019",
+    "position": "High School",
+    "grade": "Secondary Education (PCM)",
+    "institution": "Nalanda Modern Public School (CBSE)",
+    "accomplishment": [
+      "I was an all-rounder in school and a key member of the volleyball team.",
+      "I played a pivotal role in securing three Zonal Gold Medals for my team, contributing to both the Junior and Senior teams successes."
+    ],
+    "grades": ["12th Class - Percentage : 60%", "10th Class - CGPA : 8.2/10.0"]
+  }
+]
