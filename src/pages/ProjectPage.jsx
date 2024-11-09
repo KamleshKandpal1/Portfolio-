@@ -39,7 +39,7 @@ const ProjectPage = () => {
 
   return (
     // <div className=" min-h-screen flex items-center justify-center">
-    <div className="lg:w-[80%] md:-[90%] w-full h-full mx-auto flex items-center justify-center overflow-hidden itim-regular md:mt-12">
+    <div className="lg:w-[80%] md:w-[90%] w-full h-full mx-auto flex items-center justify-center overflow-hidden itim-regular md:mt-2">
       <div className=" w-full h-full grid grid-cols-1 md:grid-cols-[2fr_4fr] gap-6 p-4">
         <div className="h-full grid grid-rows-1 md:grid-rows-[1fr] gap-6 order-2 md:order-1 w-full">
           <div className="bg-[var(--accent-secondary)] p-4">
@@ -81,15 +81,14 @@ const ProjectPage = () => {
               {selectedProject.title}
             </h1>
           </div>
-          <div className="bg-[var(--accent-fouth)]">
-            <div className="md:p-4 p-2 md:w-full md:h-full h-60">
+          <div className="bg-[var(--accent-fouth)] md:w-full h-60 md:h-[60vh]">
+            <div className="md:p-4 p-2 w-full h-full">
               {!iframeError ? (
                 <iframe
                   src={selectedProject.link}
                   title={selectedProject.title}
                   className="w-full h-full"
                   frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   onError={handleIframeError} // Trigger this function on iframe error
                 ></iframe>

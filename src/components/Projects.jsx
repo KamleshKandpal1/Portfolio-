@@ -20,15 +20,15 @@ const Projects = () => {
           pauseOnMouseEnter: true, // Pauses on hover
         }}
         modules={[Autoplay]}
-        className="w-full h-full max-w-[320px] mySwiper"
+        className="w-full h-full mySwiper"
       >
         {Data.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="relative w-full h-full group p-1">
+            <div className="relative w-full h-full group p-2">
               <Link to={`/project/${item.title}`}>
                 <img
                   src={item.img}
-                  className="w-full h-full"
+                  className="w-full h-full object-fill"
                   alt={item.title}
                 />
               </Link>
