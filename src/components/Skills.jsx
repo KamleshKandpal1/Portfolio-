@@ -28,7 +28,7 @@ const Skills = () => {
   const [isFamiliarWithOpen, setIsFamiliarWithOpen] = useState(false);
 
   return (
-    <div className="p-4 skill bg-[var(--accent-primary)] text-[var(--highlight-color)] overflow-y-auto  h-[330px] w-full">
+    <div className="p-4 skill bg-[var(--accent-primary)] text-[var(--highlight-color)] overflow-y-auto w-full h-full">
       <h1 className="text-base font-normal mb-2">Skills</h1>
       {/* Front-End Section */}
       <div className="mb-2">

@@ -5,7 +5,7 @@ import { tape, tape1 } from "../assets/assest";
 
 const Struggle = () => {
   return (
-    <div className="p-4 bg-purple-400 flex w-full overflow-y-auto overflow-x-hidden md:h-[81vh] h-[40vh] skill z-0">
+    <div className="p-4 bg-purple-400 flex w-full overflow-y-auto overflow-x-hidden h-full skill z-0">
       <div className="w-1/12 relative min-h-fit"></div>
       <div className="w-11/12 border-l pl-4 flex flex-col gap-2 relative min-h-fit">
         {exp.map((data, index) => (
