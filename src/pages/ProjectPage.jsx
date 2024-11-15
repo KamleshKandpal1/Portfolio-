@@ -61,18 +61,14 @@ const ProjectPage = () => {
               <img src={back} className="w-6 h-6" alt="" />
               <p className="">Home</p>
             </div>
-            <div className="flex gap-2 items-center bg-[var(--accent-primary)] p-2 my-4 list-none text-lg font-medium text-center justify-center shadow-[5px_5px_0_var(--accent-secondary)] hover:shadow-[3px_3px_0_var(--accent-secondary)] transition-all duration-300">
-              <img src={connect} className="w-6 h-6" alt="" />
-
-              <a
-                href={selectedProject.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className=""
-              >
-                Visit Site
-              </a>
-            </div>
+            <a
+              href={selectedProject.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex gap-2 items-center bg-[var(--accent-primary)] p-2 my-4 list-none text-lg font-medium text-center justify-center shadow-[5px_5px_0_var(--accent-secondary)] hover:shadow-[3px_3px_0_var(--accent-secondary)] transition-all duration-300"
+            >
+              <img src={connect} className="w-6 h-6" alt="" /> Visit Site
+            </a>
           </div>
         </div>
         <div className="h-full grid grid-rows-1 grid-cols-1 md:grid-rows-[2fr_4fr] gap-6 order-1 md:order-2">
