@@ -1,8 +1,7 @@
 [
   {
-    "title": "Work Experience",
-    "duration": "June 2024 - Oct 2024",
-    "position": "React Developer Intern",
+    "duration": "June 2024 - Nov 2024",
+    "position": "React Intern",
     "company": "Sum India, (NGO)",
     "responsibilities": [
       "Led the first phase of development for Sum India's and Hotbot Studios' web pages.",
@@ -10,9 +9,8 @@
     ]
   },
   {
-    "title": "",
     "duration": "Feb 2023 - Sept 2023",
-    "position": "Front-End Developer Intern",
+    "position": "Front-End Intern",
     "company": "Wobnix",
     "responsibilities": [
       "Developed user-friendly interfaces with reusable code to minimize costs.",

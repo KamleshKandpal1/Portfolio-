@@ -9,19 +9,18 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-// import { ProjectProvider } from "./context/ProjectContext.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<App />} />
-      <Route path="/project/:title" element={<ProjectPage />} />
+      <Route path="/project" element={<ProjectPage />} />
     </>
   )
 );
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />,
+    <RouterProvider router={router} />
   </StrictMode>
 );

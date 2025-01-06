@@ -1,30 +1,44 @@
 [
   {
+    "title": "MedPoint Appointments",
+    "tech": ["MERN Stack", "Redux", "Tailwind CSS"],
+    "link": "https://med-point-appointment.vercel.app/",
+    "img": "/img/project_img/med-point-appointment-uuf5.vercel.app_.png",
+    "type": "Demo"
+  },
+  {
+    "title": "MedPoint Admin-Panel",
+    "tech": ["MERN Stack", "Redux", "Tailwind CSS"],
+    "link": "https://med-point-appointment-admin-panel.vercel.app/",
+    "img": "/img/project_img/med-point-appointment-9knx.vercel.app_admin-dashboard.png",
+    "type": "Demo"
+  },
+  {
+    "title": "Task Management Application",
+    "tech": ["MERN Stack", "Redux", "Tailwind CSS"],
+    "link": "https://task-mang-frontend.vercel.app/",
+    "img": "/img/project_img/task-mang-frontend.vercel.app_signup.png",
+    "type": "Demo"
+  },
+  {
     "title": "Hotbot Studio",
-    "tech": "React, Tailwind CSS, Magic UI",
+    "tech": ["React", "Tailwind CSS", "Magic UI"],
     "link": "https://www.hotbotstudios.com/",
     "img": "/img/project_img/www.hotbotstudios.com_.png",
     "type": "Project"
   },
   {
     "title": "Sons Commerces",
-    "tech": "React, Tailwind CSS, Axios, Dummy-JSON API, Context API",
+    "tech": ["React", "Tailwind CSS", "Axios", "Dummy-JSON API", "Context API"],
     "link": "https://main--sons-commerces.netlify.app/",
     "img": "/img/project_img/main--sons-commerces.netlify.app_.png",
     "type": "Demo"
   },
   {
     "title": "Language Translator",
-    "tech": "React, Tailwind, Axios, Context API, Rapid API",
+    "tech": ["React", "Tailwind", "Axios", "Context API", "Rapid API"],
     "link": "https://language-translator-beige.vercel.app/",
     "img": "/img/project_img/language-translator-beige.vercel.app_.png",
-    "type": "Demo"
-  },
-  {
-    "title": "Task Management Application",
-    "tech": "MERN Stack, Redux, Tailwind CSS",
-    "link": "https://task-mang-frontend.vercel.app/",
-    "img": "/img/project_img/task-mang-frontend.vercel.app_signup.png",
     "type": "Demo"
   }
 ]

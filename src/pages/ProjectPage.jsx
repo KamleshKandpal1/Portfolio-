@@ -1,112 +1,62 @@
-import React, { useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
-import Data from "../assets/json/ProductData.json";
-import { back, connect, error, web_not_find } from "../assets/assest";
+import React, { useEffect, useState } from "react";
+import data from "../assets/json/ProductData.json";
+import { TbStack2Filled } from "react-icons/tb";
+import { Link } from "react-router-dom";
 
 const ProjectPage = () => {
-  const { title } = useParams();
-  const history = useNavigate();
-  const [iframeError, setIframeError] = useState(false);
-
-  const handleIframeError = () => {
-    setIframeError(true); // If iframe fails, set error state to true
-  };
-  // Find the project by title
-  const selectedProject = Data.find((project) => project.title === title);
-  const stack = selectedProject.tech.split(", ");
-  if (!selectedProject) {
-    return (
-      <div className="w-full h-full bg-[var(--background-color)] grid place-content-center">
-        <div className="text-center">
-          {/* Error Image */}
-          <img
-            src={error}
-            className="object-scale-down w-[70%] mt-10 mx-auto rounded-2xl"
-            alt="Error"
-          />
-
-          {/* Return to Home Button */}
-          <button
-            className="my-4 px-6 py-2 rounded-2xl text-xl font-medium bg-[var(--accent-fouth)] hover:bg-[var(--accent-third)] text-[var(--text-color)] transition duration-300"
-            onClick={() => history("/")}
-          >
-            🔙 2️⃣ 🏠
-          </button>
-        </div>
-      </div>
-    );
-  }
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    // <div className=" min-h-screen flex items-center justify-center">
-    <div className="lg:w-[80%] md:w-[90%] w-full h-full mx-auto flex items-center justify-center overflow-hidden itim-regular md:mt-2">
-      <div className=" w-full h-full grid grid-cols-1 md:grid-cols-[2fr_4fr] gap-6 p-4">
-        <div className="h-full grid grid-rows-1 md:grid-rows-[1fr] gap-6 order-2 md:order-1 w-full">
-          <div className="bg-[var(--accent-secondary)] p-4">
-            <p className="text-2xl mt-2 text-center">Tech Stack</p>
-            {stack.map((item, i) => (
-              <li
-                key={i}
-                className="bg-[var(--accent-primary)] p-2 my-2  list-none font-medium text-center px-3 py-2 text-white md:text-lg  shadow-[5px_5px_0_var(--accent-third)] hover:shadow-[3px_3px_0_var(--accent-third)] transition-all duration-300"
-              >
-                {item}
-              </li>
-            ))}
-          </div>
-          <div className="bg-[var(--accent-third)]  p-4">
-            <div
-              className="flex gap-2 items-center bg-[var(--accent-secondary)] p-2 my-4 list-none text-lg font-medium text-center justify-center shadow-[5px_5px_0_var(--accent-primary)] hover:shadow-[3px_3px_0_var(--accent-primary)] transition-all duration-300 cursor-pointer"
-              onClick={() => history("/")}
-            >
-              <img src={back} className="w-6 h-6" alt="" />
-              <p className="">Home</p>
-            </div>
-            <a
-              href={selectedProject.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex gap-2 items-center bg-[var(--accent-primary)] p-2 my-4 list-none text-lg font-medium text-center justify-center shadow-[5px_5px_0_var(--accent-secondary)] hover:shadow-[3px_3px_0_var(--accent-secondary)] transition-all duration-300"
-            >
-              <img src={connect} className="w-6 h-6" alt="" /> Visit Site
-            </a>
-          </div>
+    <div className="text-white sm:w-[60%] lg:w-[40%]  mx-auto sm:my-10 p-2 sm:p-0 h-full">
+      <div className="text-[#916ce7] bg-[#101010] p-4 h-full flex flex-col items-center space-y-4 rounded-lg">
+        {/* Heading */}
+
+        <div className="flex items-center justify-center gap-x-1 text-2xl">
+          <TbStack2Filled />
+          <p className="text-[15px] font-medium text-[#999999]">
+            Project Stacks
+          </p>
         </div>
-        <div className="h-full grid grid-rows-1 grid-cols-1 md:grid-rows-[2fr_4fr] gap-6 order-1 md:order-2">
-          <div className="bg-[var(--accent-third)] p-4 grid place-content-center">
-            <h1 className="md:text-6xl text-4xl font-bold text-center text-[var(--highlight-color)]">
-              {selectedProject.title}
-            </h1>
-          </div>
-          <div className="bg-[var(--accent-fouth)] md:w-full h-60 md:h-[60vh]">
-            <div className="md:p-4 p-2 w-full h-full">
-              {!iframeError ? (
-                <iframe
-                  src={selectedProject.link}
-                  title={selectedProject.title}
-                  className="w-full h-full"
-                  frameBorder="0"
-                  allowFullScreen
-                  onError={handleIframeError} // Trigger this function on iframe error
-                ></iframe>
-              ) : (
-                <div className="w-full h-full flex flex-col items-center justify-center">
-                  <img
-                    src={web_not_find}
-                    className="w-full h-full"
-                    alt="Project preview"
-                  />
-                  <p className="text-center text-gray-500 mt-2">
-                    The webpage at {selectedProject.link} might be temporarily
-                    down or may have moved permanently.
-                  </p>
-                </div>
-              )}
+
+        {/* box */}
+        {data.map((item, index) => (
+          <div
+            className="bg-[#141414] w-full h-auto flex flex-col gap-y-2 rounded-lg p-2"
+            key={index}
+          >
+            <div className="p-3 pb-0">
+              <img src={item.img} alt="" className="rounded-lg" />
+            </div>
+            <div className="flex flex-col gap-y-2 p-3">
+              {/*  */}
+              <div className="flex justify-between items-center">
+                <h1 className="text-base font-medium">{item.title}</h1>
+                <Link
+                  target="_blank"
+                  to={item.link}
+                  className="bg-[#191919] hover:bg-[#282828] text-[#999999] rounded-2xl text-xs font-medium px-4 py-1"
+                >
+                  Live
+                </Link>
+              </div>
+              {/*  */}
+              <div className="bg-[#141414] border border-[#282828] w-full h-auto flex flex-wrap items-center rounded-lg p-2 gap-x-1 gap-y-2">
+                {item.tech.map((items, techindex) => (
+                  <div
+                    className="flex space-x-1.5 items-center border border-[#282828] px-2 py-1 text-xs font-medium text-[#916ce7] rounded-xl bg-[#191919] cursor-pointer"
+                    key={techindex}
+                  >
+                    <p className="text-[#999999]">{items}</p>
+                  </div>
+                ))}
+              </div>
+              {/*  */}
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
-    // </div>
   );
 };
 
