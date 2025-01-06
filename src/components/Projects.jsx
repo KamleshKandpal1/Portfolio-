@@ -5,37 +5,54 @@ import "swiper/css/effect-creative";
 import { Autoplay } from "swiper/modules";
 import Data from "../assets/json/ProductData.json";
 import { Link } from "react-router-dom";
+import { PiBagBold } from "react-icons/pi";
 
 const Projects = () => {
   return (
-    <div className="w-full h-full bg-[var(--accent-fouth)] flex justify-center items-center ">
+    <div className="text-[#916ce7] bg-[#101010] p-4 h-full flex flex-col items-center space-y-5 rounded-lg relative">
+      {/* Heading */}
+      <div>
+        <div className="flex items-center justify-center gap-x-1 text-xl">
+          <PiBagBold />
+          <p className="text-[12px] font-medium text-[#999999]">Projects</p>
+        </div>
+        <p className="text-[15px] font-normal text-[#e6e6e6] text-center">
+          Works Gallery
+        </p>
+      </div>
       <Swiper
+        slidesPerView={2}
+        centeredSlides={true}
         grabCursor={true}
         effect={"creative"}
         loop={true}
-        centeredSlides={true}
         autoplay={{
-          delay: 5000,
+          delay: 3000,
           disableOnInteraction: true,
           pauseOnMouseEnter: true, // Pauses on hover
         }}
         modules={[Autoplay]}
-        className="w-full h-full mySwiper"
+        className="w-full h-full mySwiper "
       >
         {Data.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="relative w-full h-full group p-2">
-              <Link to={`/project/${item.title}`}>
-                <img
-                  src={item.img}
-                  className="w-full h-full object-fill"
-                  alt={item.title}
-                />
-              </Link>
+            <div className="relative w-full h-24 group rounded-lg px-2">
+              <img
+                src={item.img}
+                className="w-full h-full rounded-lg"
+                alt={item.title}
+              />
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
+      <Link
+        to="/project"
+        className="bg-[#916ce7] text-[#e6e6e6]
+      rounded-xl text-xs px-6 py-2.5 font-medium border border-black"
+      >
+        View Works
+      </Link>
     </div>
   );
 };

@@ -1,248 +1,100 @@
 import React, { useState } from "react";
-import {
-  bootstrap,
-  c,
-  cplus,
-  css,
-  express,
-  git,
-  github,
-  html,
-  js,
-  mongodb,
-  mysql,
-  nodejs,
-  php,
-  python,
-  react,
-  react_native,
-  tailwind,
-} from "../assets/assest";
-import { FaChevronDown } from "react-icons/fa6";
+import { BsGithub } from "react-icons/bs";
+import { CgCPlusPlus } from "react-icons/cg";
+import { DiMongodb, DiVisualstudio } from "react-icons/di";
+import { FaNodeJs, FaReact } from "react-icons/fa6";
+import { IoLogoJavascript } from "react-icons/io";
+import { SiExpress, SiTailwindcss } from "react-icons/si";
+import { TbBrandNextjs, TbStack2Filled } from "react-icons/tb";
 
 const Skills = () => {
-  const [isFrontendOpen, setIsFrontendOpen] = useState(true);
-  const [isBackendOpen, setIsBackendOpen] = useState(false);
-  const [isToolsOpen, setIsToolsOpen] = useState(false);
-  const [isDatabaseOpen, setIsDatabaseOpen] = useState(false);
-  const [isFamiliarWithOpen, setIsFamiliarWithOpen] = useState(false);
-
   return (
-    <div className="p-4 skill bg-[var(--accent-primary)] text-[var(--highlight-color)] overflow-y-auto w-full h-full">
-      <h1 className="text-base font-normal mb-2">Skills</h1>
-      {/* Front-End Section */}
-      <div className="mb-2">
-        <h1 className="text-base font-semibold flex items-center justify-between my-0.5">
-          Front-End{" "}
-          <span
-            onClick={() => setIsFrontendOpen(!isFrontendOpen)}
-            aria-expanded={isFrontendOpen}
-            className={`transition-transform duration-300 cursor-pointer ${
-              isFrontendOpen ? "rotate-180" : ""
-            }`}
-          >
-            <FaChevronDown />
-          </span>
-        </h1>
-        <div
-          className={`overflow-hidden transition-all duration-700 ${
-            isFrontendOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
-          }  gap-x-4 py-1.5 flex items-center`}
-        >
-          {/* Front-End Skills */}
-          <div className="flex flex-col items-center gap-x-1">
-            <img className="w-6 h-6" src={react} alt="React logo" />
-            <p className="text-[11px] font-normal text-[var(--text-color)]">
-              React
-            </p>
+    <div className="text-[#916ce7] bg-[#101010] p-4 h-full flex flex-col items-center space-y-6 rounded-lg">
+      {/* Heading */}
+      <div>
+        <div className="flex items-center justify-center gap-x-1 text-xl">
+          <TbStack2Filled />
+          <p className="text-[12px] font-medium text-[#999999]">My Stacks</p>
+        </div>
+        <p className="text-[15px] font-normal text-[#e6e6e6] text-center">
+          Tech Arsenal
+        </p>
+      </div>
+      {/* Skills */}
+      <div className="flex flex-col gap-2 row w-full">
+        {/* col-1 */}
+        <div className="col-1 w-full gap-2 flex">
+          <div className="w-1/2 p-2 flex items-center gap-x-2 bg-[#191919] text-[#e6e6e6] rounded-lg hover:bg-[#1f1f1f] cursor-pointer">
+            <div className="p-2 bg-[#282828] text-[#cccccc] rounded-lg text-sm">
+              <FaReact />
+            </div>
+            <p className="text-[12px] font-normal">React</p>
           </div>
-          <div className="flex flex-col items-center gap-x-1">
-            <img className="w-6 h-6" src={html} alt="HTML logo" />
-            <p className="text-[11px] font-normal text-[var(--text-color)]">
-              Html
-            </p>
-          </div>
-          <div className="flex flex-col items-center gap-x-1">
-            <img className="w-6 h-6" src={css} alt="CSS logo" />
-            <p className="text-[11px] font-normal text-[var(--text-color)]">
-              Css
-            </p>
-          </div>
-          <div className="flex flex-col items-center gap-x-1">
-            <img className="w-6 h-6" src={js} alt="JavaScript logo" />
-            <p className="text-[11px] font-normal text-[var(--text-color)]">
-              Js
-            </p>
-          </div>
-          <div className="flex flex-col items-center gap-x-1">
-            <img className="w-6 h-6" src={tailwind} alt="Tailwind logo" />
-            <p className="text-[11px] font-normal text-[var(--text-color)]">
-              Tailwind
-            </p>
-          </div>
-          <div className="flex flex-col items-center gap-x-1">
-            <img className="w-6 h-6" src={bootstrap} alt="Bootstrap logo" />
-            <p className="text-[11px] font-normal text-[var(--text-color)]">
-              Bootstrap
-            </p>
+          <div className="w-1/2 p-2 flex items-center gap-x-2 bg-[#191919] text-[#e6e6e6] rounded-lg hover:bg-[#1f1f1f] cursor-pointer">
+            <div className="p-2 bg-[#282828] text-[#cccccc] rounded-lg text-sm">
+              <IoLogoJavascript />
+            </div>
+            <p className="text-[12px] font-normal">JavaScript</p>
           </div>
         </div>
-      </div>
-
-      {/* Back-End Section */}
-      <div className="mb-2">
-        <h1 className="text-base font-semibold flex items-center justify-between my-0.5">
-          Back-End{" "}
-          <span
-            onClick={() => setIsBackendOpen(!isBackendOpen)}
-            aria-expanded={isBackendOpen}
-            className={`transition-transform duration-300 cursor-pointer ${
-              isBackendOpen ? "rotate-180" : ""
-            }`}
-          >
-            <FaChevronDown />
-          </span>
-        </h1>
-        <div
-          className={`overflow-hidden transition-all duration-300 ${
-            isBackendOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
-          } gap-x-4 py-1.5 flex items-center`}
-        >
-          <div className="flex flex-col items-center gap-x-1">
-            <img
-              className="w-6 h-6 bg-green-950 rounded-full"
-              src={nodejs}
-              alt="Node.js logo"
-            />
-            <p className="text-[11px] font-normal text-[var(--text-color)]">
-              NodeJs
-            </p>
+        {/* col-2 */}
+        <div className="col-2 w-full gap-2 flex ">
+          <div className="w-1/2 p-2 flex items-center gap-x-2 bg-[#191919] text-[#e6e6e6] rounded-lg hover:bg-[#1f1f1f] cursor-pointer">
+            <div className="p-2 bg-[#282828] text-[#cccccc] rounded-lg text-sm">
+              <FaNodeJs />
+            </div>
+            <p className="text-[12px] font-normal">NodeJs</p>
           </div>
-          <div className="flex flex-col items-center gap-x-1">
-            <img className="w-6 h-6" src={express} alt="Express logo" />
-            <p className="text-[11px] font-normal text-[var(--text-color)]">
-              Express Js
-            </p>
+          <div className="w-1/2 p-2 flex items-center gap-x-2 bg-[#191919] text-[#e6e6e6] rounded-lg hover:bg-[#1f1f1f] cursor-pointer">
+            <div className="p-2 bg-[#282828] text-[#cccccc] rounded-lg text-sm">
+              <SiExpress />
+            </div>
+            <p className="text-[12px] font-normal">ExpressJs</p>
           </div>
         </div>
-      </div>
-
-      {/* Database Section */}
-      <div className="mb-2">
-        <h1 className="text-base font-semibold flex items-center justify-between my-0.5">
-          Database{" "}
-          <span
-            onClick={() => setIsDatabaseOpen(!isDatabaseOpen)}
-            aria-expanded={isDatabaseOpen}
-            className={`transition-transform duration-300 cursor-pointer ${
-              isDatabaseOpen ? "rotate-180" : ""
-            }`}
-          >
-            <FaChevronDown />
-          </span>
-        </h1>
-        <div
-          className={`overflow-hidden transition-all duration-300 ${
-            isDatabaseOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
-          } flex items-center gap-4 py-1.5`}
-        >
-          <div className="flex flex-col items-center gap-x-1">
-            <img className="w-6 h-6" src={mongodb} alt="MongoDB logo" />
-            <p className="text-[11px] font-normal text-[var(--text-color)]">
-              MongoDB
-            </p>
+        {/* col-3 */}
+        <div className="col-3 w-full gap-2 flex ">
+          <div className="w-1/2 p-2 flex items-center gap-x-2 bg-[#191919] text-[#e6e6e6] rounded-lg hover:bg-[#1f1f1f] cursor-pointer">
+            <div className="p-2 bg-[#282828] text-[#cccccc] rounded-lg text-sm">
+              <DiMongodb />
+            </div>
+            <p className="text-[12px] font-normal">MongoDB</p>
           </div>
-          <div className="flex flex-col items-center gap-x-1">
-            <img className="w-6 h-6" src={mysql} alt="MySQL logo" />
-            <p className="text-[11px] font-normal text-[var(--text-color)]">
-              MySql
-            </p>
+          <div className="w-1/2 p-2 flex items-center gap-x-2 bg-[#191919] text-[#e6e6e6] rounded-lg hover:bg-[#1f1f1f] cursor-pointer">
+            <div className="p-2 bg-[#282828] text-[#cccccc] rounded-lg text-sm">
+              <SiTailwindcss />
+            </div>
+            <p className="text-[12px] font-normal">Tailwind CSS</p>
           </div>
         </div>
-      </div>
-
-      {/* Tools Section */}
-      <div className="mb-2">
-        <h1 className="text-base font-semibold flex items-center justify-between my-0.5">
-          Tools{" "}
-          <span
-            onClick={() => setIsToolsOpen(!isToolsOpen)}
-            aria-expanded={isToolsOpen}
-            className={`transition-transform duration-300 cursor-pointer ${
-              isToolsOpen ? "rotate-180" : ""
-            }`}
-          >
-            <FaChevronDown />
-          </span>
-        </h1>
-        <div
-          className={`overflow-hidden transition-all duration-300 ${
-            isToolsOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
-          } flex items-center gap-4 py-1.5`}
-        >
-          <div className="flex flex-col items-center gap-x-1">
-            <img className="w-6 h-6" src={git} alt="Git logo" />
-            <p className="text-[11px] font-normal text-[var(--text-color)]">
-              Git
-            </p>
+        {/* col-4 */}
+        {/* <div className="col-4 w-full gap-2 flex ">
+          <div className="w-1/2 p-2 flex items-center gap-x-2 bg-[#191919] text-[#e6e6e6] rounded-lg hover:bg-[#1f1f1f] cursor-pointer">
+            <div className="p-2 bg-[#282828] text-[#cccccc] rounded-lg text-sm">
+              <TbBrandNextjs />
+            </div>
+            <p className="text-[12px] font-normal">NextJs</p>
           </div>
-          <div className="flex flex-col items-center gap-x-1">
-            <img className="w-6 h-6" src={github} alt="GitHub logo" />
-            <p className="text-[11px] font-normal text-[var(--text-color)]">
-              Github
-            </p>
+          <div className="w-1/2 p-2 flex items-center gap-x-2 bg-[#191919] text-[#e6e6e6] rounded-lg hover:bg-[#1f1f1f] cursor-pointer">
+            <div className="p-2 bg-[#282828] text-[#cccccc] rounded-lg text-sm">
+              <CgCPlusPlus />
+            </div>
+            <p className="text-[12px] font-normal">C++</p>
           </div>
-        </div>
-      </div>
-
-      {/* Familiar With Section */}
-      <div className="mb-2">
-        <h1 className="text-base font-semibold flex items-center justify-between my-0.5">
-          Familiar with{" "}
-          <span
-            onClick={() => setIsFamiliarWithOpen(!isFamiliarWithOpen)}
-            aria-expanded={isFamiliarWithOpen}
-            className={`transition-transform duration-300 cursor-pointer ${
-              isFamiliarWithOpen ? "rotate-180" : ""
-            }`}
-          >
-            <FaChevronDown />
-          </span>
-        </h1>
-        <div
-          className={`overflow-hidden transition-all duration-300 ${
-            isFamiliarWithOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
-          } flex gap-4 py-2 items-center`}
-        >
-          <div className="flex flex-col items-center gap-x-1">
-            <img className="w-6 h-6" src={python} alt="Python logo" />
-            <p className="text-[11px] font-normal text-[var(--text-color)]">
-              Python
-            </p>
+        </div> */}
+        {/* col-5 */}
+        <div className="col-5 w-full gap-2 flex ">
+          <div className="w-1/2 p-2 flex items-center gap-x-2 bg-[#191919] text-[#e6e6e6] rounded-lg hover:bg-[#1f1f1f] cursor-pointer">
+            <div className="p-2 bg-[#282828] text-[#cccccc] rounded-lg text-sm">
+              <BsGithub />
+            </div>
+            <p className="text-[12px] font-normal">Github</p>
           </div>
-          <div className="flex flex-col items-center gap-x-1">
-            <img className="w-6 h-6" src={cplus} alt="C++ logo" />
-            <p className="text-[11px] font-normal text-[var(--text-color)]">
-              C++
-            </p>
-          </div>
-          <div className="flex flex-col items-center gap-x-1">
-            <img className="w-6 h-6" src={c} alt="C logo" />
-            <p className="text-[11px] font-normal text-[var(--text-color)]">
-              C
-            </p>
-          </div>
-          <div className="flex flex-col items-center gap-x-1">
-            <img className="w-6 h-6" src={php} alt="PHP logo" />
-            <p className="text-[11px] font-normal text-[var(--text-color)]">
-              Php
-            </p>
-          </div>
-          <div className="flex flex-col items-center gap-x-1">
-            <img className="w-6 h-6" src={react_native} alt="PHP logo" />
-            <p className="text-[11px] font-normal text-[var(--text-color)]">
-              React Native
-            </p>
+          <div className="w-1/2 p-2 flex items-center gap-x-2 bg-[#191919] text-[#e6e6e6] rounded-lg hover:bg-[#1f1f1f] cursor-pointer">
+            <div className="p-2 bg-[#282828] text-[#cccccc] rounded-lg text-sm">
+              <DiVisualstudio />
+            </div>
+            <p className="text-[12px] font-normal">Visiual Studio</p>
           </div>
         </div>
       </div>
