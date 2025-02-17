@@ -11,7 +11,7 @@ import {
   FaLocationDot,
 } from "react-icons/fa6";
 import { RiGraduationCapFill } from "react-icons/ri";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 const Detail = () => {
   return (
     <div className="w-full h-full bg-[#101010] p-4 flex flex-col items-center space-y-6 rounded-lg">
