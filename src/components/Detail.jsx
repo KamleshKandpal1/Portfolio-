@@ -18,12 +18,8 @@ const Detail = () => {
       {/* image and Details */}
       <div className="flex w-full space-x-5">
         {/* image */}
-        <div className="bg-[#916ce7] w-40 rounded-lg p-1 pb-0 overflow-hidden flex justify-center">
-          <img
-            src={avatar}
-            className="sm:h-[100px] h-full sm:w-[100px]"
-            alt=""
-          />
+        <div className="bg-[#916ce7] rounded-lg my-1 overflow-hidden flex justify-center">
+          <img src={avatar} className="h-[100px] w-[150px]" alt="" />
         </div>
         {/* Name */}
         <div className="flex flex-col space-y-2 w-full justify-center">
