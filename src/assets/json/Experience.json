@@ -1,5 +1,14 @@
 [
   {
+    "duration": "Dec 2024 - Feb 2025",
+    "position": "MERN - Next Js Developer Intern",
+    "company": "EddyTools Tech Solutions",
+    "responsibilities": [
+      "Master React Context, Redux; optimize API calls with React Query, understand SSR, SSG.",
+      "Build REST APIs with Express.js, manage databases using Prisma/Mongoose, and implement authentication with NextAuth.js."
+    ]
+  },
+  {
     "duration": "June 2024 - Nov 2024",
     "position": "React Intern",
     "company": "Sum India, (NGO)",
