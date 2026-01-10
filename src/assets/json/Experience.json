@@ -1,8 +1,19 @@
 [
   {
+    "duration": "Oct 2025 - Currently working",
+    "position": "Next Js Developer",
+    "company": "InSoftLink Software Technology",
+    "company_link": "https://insoftlinktechnology.com/",
+    "responsibilities": [
+      "Maintaining and enhancing the Admin Panel for the School Management system (ERP – SchoolAura)",
+      "Updating, debugging, and optimizing the SchoolAura website to improve performance and reliability."
+    ]
+  },
+  {
     "duration": "Dec 2024 - Feb 2025",
     "position": "MERN - Next Js Developer Intern",
     "company": "EddyTools Tech Solutions",
+    "company_link": "https://www.eddytools.com/",
     "responsibilities": [
       "Master React Context, Redux; optimize API calls with React Query, understand SSR, SSG.",
       "Build REST APIs with Express.js, manage databases using Prisma/Mongoose, and implement authentication with NextAuth.js."
@@ -12,18 +23,12 @@
     "duration": "June 2024 - Nov 2024",
     "position": "React Intern",
     "company": "Sum India, (NGO)",
+    "company_link": "http://www.thesumindia.com/",
+    "company1": "Hotbot Studios",
+    "company_link1": "https://www.hotbotstudios.com/",
     "responsibilities": [
       "Led the first phase of development for Sum India's and Hotbot Studios' web pages.",
       "Currently working on paid projects for Kerasilk and Sharmabales."
-    ]
-  },
-  {
-    "duration": "Feb 2023 - Sept 2023",
-    "position": "Front-End Intern",
-    "company": "Wobnix",
-    "responsibilities": [
-      "Developed user-friendly interfaces with reusable code to minimize costs.",
-      "Designed layouts and graphics to enhance website aesthetics."
     ]
   }
 ]

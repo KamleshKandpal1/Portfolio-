@@ -37,7 +37,7 @@ const ProjectPage = () => {
                   to={item.link}
                   className="bg-[#191919] hover:bg-[#282828] text-[#999999] rounded-2xl text-xs font-medium px-4 py-1"
                 >
-                  Live
+                  {item?.type}
                 </Link>
               </div>
               {/*  */}

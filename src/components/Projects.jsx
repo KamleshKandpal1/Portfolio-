@@ -36,12 +36,14 @@ const Projects = () => {
       >
         {Data.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="relative w-full h-24 group rounded-lg px-2">
-              <img
-                src={item.img}
-                className="w-full h-full rounded-lg"
-                alt={item.title}
-              />
+            <div className="relative w-full h-32 group rounded-lg px-2">
+              <Link to={item?.link} target="_blank">
+                <img
+                  src={item.img}
+                  className="w-full rounded-lg h-full"
+                  alt={item.title}
+                />
+              </Link>
             </div>
           </SwiperSlide>
         ))}
