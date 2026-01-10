@@ -1,6 +1,7 @@
 import React from "react";
 import avatar from "../assets/Kamlesh.png";
 import resume from "../assets/doc/Kamlesh Kandpal Front-End Developer.pdf";
+import { WordRotate } from "@/components/ui/word-rotate";
 import {
   FaClock,
   FaDownload,
@@ -12,15 +13,15 @@ import {
 } from "react-icons/fa6";
 import { RiGraduationCapFill } from "react-icons/ri";
 // import { Link } from "react-router-dom";
-const Detail = () => { 
-  // 
+const Detail = () => {
+  //
   return (
     <div className="w-full h-full bg-[#101010] p-4 flex flex-col items-center space-y-6 rounded-lg">
       {/* image and Details */}
       <div className="flex w-full space-x-5">
         {/* image */}
-        <div className="bg-[#916ce7] rounded-lg my-1 overflow-hidden flex justify-center">
-          <img src={avatar} className="h-[100px] w-[150px]" alt="" />
+        <div className="bg-[#916ce7] h-[120px] w-[150px] rounded-lg my-1 overflow-hidden flex justify-center">
+          <img src={avatar} className="w-100 h-100" alt="" />
         </div>
         {/* Name */}
         <div className="flex flex-col space-y-2 w-full justify-center">
@@ -50,11 +51,12 @@ const Detail = () => {
           <h1 className="sm:text-2xl text-base font-semibold text-[#e6e6e6]">
             Kamlesh Kandpal
           </h1>
-          <p className="text-[#999999] sm:text-sm text-xs font-medium">
-            I'm a{" "}
+          <p className="text-[#999999] sm:text-sm text-xs font-medium flex items-center gap-2">
             <span className="text-[#916ce7] font-semibold">
-              React Developer
+              {/* React Developer */}
+              <WordRotate words={["React", "NextJs"]} />
             </span>
+            Developer
           </p>
         </div>
       </div>
@@ -87,7 +89,7 @@ const Detail = () => {
         <a
           target="_blank"
           href="https://github.com/KamleshKandpal1"
-          className="w-1/2 p-3 bg-[#1f1f1f] flex space-x-2 items-center  text-[#999999] rounded-lg justify-center"
+          className="w-1/2 p-3 bg-[#1f1f1f] flex space-x-2 items-center  text-[#999999] hover:text-[#916ce7] rounded-lg justify-center"
         >
           <FaGithub />
           <p className="text-xs font-medium">Github</p>
@@ -96,7 +98,7 @@ const Detail = () => {
         <a
           target="_blank"
           href="https://www.linkedin.com/in/kamlesh-kandpal/"
-          className="w-1/2 p-3 bg-[#1f1f1f] flex space-x-2 items-center  text-[#999999] rounded-lg justify-center"
+          className="w-1/2 p-3 bg-[#1f1f1f] flex space-x-2 items-center  text-[#999999] hover:text-[#916ce7] rounded-lg justify-center"
         >
           <FaLinkedin />
           <p className="text-xs font-medium">Linkedin</p>

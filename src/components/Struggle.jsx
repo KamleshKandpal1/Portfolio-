@@ -4,6 +4,7 @@ import edu from "../assets/json/Education.json";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { GiLaddersPlatform } from "react-icons/gi";
 import { IoSchoolSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Struggle = () => {
   return (
@@ -74,8 +75,22 @@ const Struggle = () => {
                   {data.position}
                 </p>
                 <p className="text-xs font-medium text-[#999999]">
-                  {data.company} | {data.duration}
+                  <a className="hover:text-[#916ce7]" href={data.company_link}>
+                    {data.company}
+                  </a>{" "}
+                  | {data.duration}
                 </p>
+                {data?.company1 && data?.company_link1 && (
+                  <p className="text-xs font-medium text-[#999999]">
+                    <a
+                      className="hover:text-[#916ce7]"
+                      href={data.company_link1}
+                    >
+                      {data.company1}
+                    </a>{" "}
+                    | {data.duration}
+                  </p>
+                )}
                 <ul className="list-image-none space-y-1 break-words hyphens-auto">
                   {data.responsibilities.map((item, i) => (
                     <li
