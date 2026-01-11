@@ -24,22 +24,18 @@ const Detail = () => {
           <img src={avatar} className="w-100 h-100" alt="" />
         </div>
         {/* Name */}
-        <div className="flex flex-col space-y-2 w-full justify-center">
+        <div className="flex flex-col space-y-2 w-full ">
           <div className="flex items-center justify-between">
-            <div className="bg-[#141414] rounded-3xl p-1 flex sm:space-x-2 space-x-1 outline outline-1 outline-yellow-50 items-center">
-              <div className="sm:p-1 p-0.5 rounded-full bg-[#1f1f1f]">
-                <div className="sm:p-1.5 p-1 rounded-full bg-[#6dd33d]"></div>
-              </div>
-              <p className="text-[#999999] font-medium sm:text-sm text-xs">
-                Availabel To Work
-              </p>
-            </div>
+            <h1 className="sm:text-2xl text-base font-semibold text-[#e6e6e6]">
+              Kamlesh Kandpal
+            </h1>
             <div className=" flex items-center space-x-2">
               <p className="text-[#e6e6e6] sm:text-sm text-xs font-normal hidden sm:block">
                 Resume
               </p>
-              <div className="bg-[#282828] text-[#e6e6e6] sm:p-2.5 p-1.5 rounded-lg hover:bg-[#1f1f1f] cursor-pointer">
+              <div className="group bg-[#282828] text-[#e6e6e6] sm:p-2.5 p-1.5 rounded-lg hover:bg-[#1f1f1f] cursor-pointer">
                 <a
+                  className="group-hover:text-[#916ce7]"
                   href={resume}
                   download="Kamlesh Kandpal Front-End Developer.pdf"
                 >
@@ -48,9 +44,6 @@ const Detail = () => {
               </div>
             </div>
           </div>
-          <h1 className="sm:text-2xl text-base font-semibold text-[#e6e6e6]">
-            Kamlesh Kandpal
-          </h1>
           <p className="text-[#999999] sm:text-sm text-xs font-medium flex items-center gap-2">
             <span className="text-[#916ce7] font-semibold">
               {/* React Developer */}
