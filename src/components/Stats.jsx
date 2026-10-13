@@ -22,7 +22,7 @@ const Stats = () => {
       <div className="w-1/2 flex flex-col items-center bg-[#101010] py-4 px-2 gap-2 rounded-lg">
         <div className="flex items-center gap-x-1">
           <p className="text-[#e6e6e6] text-5xl font-normal text-center">
-            <NumberTicker value={1} decimalPlaces={0} />
+            <NumberTicker value={2} decimalPlaces={0} />
           </p>
           <p className="text-3xl font-medium">+</p>
         </div>

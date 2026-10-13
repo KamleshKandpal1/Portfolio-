@@ -1,6 +1,6 @@
 import React from "react";
 import avatar from "../assets/Kamlesh.png";
-import resume from "../assets/doc/Kamlesh Kandpal Front-End Developer.pdf";
+import resume from "../assets/doc/Kamlesh Kandpal React Frontend Developer.pdf";
 import { WordRotate } from "@/components/ui/word-rotate";
 import {
   FaClock,
